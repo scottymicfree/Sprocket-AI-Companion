@@ -121,6 +121,12 @@ Do not commit API keys, private conversation databases, credentials, personal do
 
 Cloud model use may transmit authorized conversation or document content to an external provider.
 
+## Repository arrangement
+
+The source code and internal development work for Sprocket are intended to remain in a **separate private repository**. This public repository is for product documentation, public feedback, and approved release announcements. It does not distribute the paid Windows app or imply an open-source license.
+
+Read the [repository policy — proprietary development, public product](docs/REPOSITORY_POLICY.md) and [v1.0 release requirements](docs/V1_RELEASE_GATES.md).
+
 ## Development
 
 Created and developed at **Fenton Lab** as part of ongoing experimentation with local-first artificial intelligence, governed agents, and human-centered interfaces.
