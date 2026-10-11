@@ -2,11 +2,11 @@
 
 **Decision:** Fenton Lab will keep Sprocket's application source private while maintaining this public repository for product documentation, community feedback, and approved release announcements.
 
-**Current status:** Public documentation repository exists. A separate **private** development repository has not yet been created or verified. No v1.0 commercial release is approved.
+**Current status (October 11, 2026):** Both the public documentation repository and a separate **private** development repository have been verified. The private 0.7.4 U3 candidate is a development baseline, **not a commercial release**. No v1.0 commercial release is approved.
 
-## Private development repository (planned)
+## Private development repository (established)
 
-Use a new GitHub repository under the authorized owner account with **Private** visibility. The private repository will contain:
+Maintain the verified private repository under the authorized owner account. Private development includes:
 
 - Sprocket Python application and UI/animation engine source.
 - Automated tests, workflows and build/packaging scripts.
