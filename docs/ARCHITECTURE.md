@@ -1,31 +1,67 @@
-# Sprocket architecture
+# How Sprocket is put together
 
-## Verified prototype baseline — v0.5 Workshop Reactions
+*A high-level public architecture overview — October 2026*
 
-| Layer | Implementation currently evidenced |
-|---|---|
-| Desktop | Python 3 / Tkinter, draggable transparent fox |
-| Animation | 73 frames across 11 existing strips |
-| Chat history | Sprocket-local SQLite |
-| AI options | Offline companion, local Ollama, optional Gemini Cloud |
-| File observations | User-selected, bounded read-only text/DOCX and top-level folder listing |
-| Cloud submission | Separate approval before sending selected excerpts |
-| External authority | No general shell execution or Lucy/E.M.M.A. control |
+Sprocket is a standalone Windows desktop companion. The goal is to keep the **character**, **conversation**, **memory**, **permissions**, and **optional capabilities** separate enough that a change to one doesn't silently change the others.
 
-**Evidence:** 40/40 offline unit tests passed when the v0.5 archive was retested, October 2026. Those tests do not prove live Windows UI, provider connectivity, packaging, or commercial licensing.
+## Product layers
 
-## v1.0 invariants
+| Layer | Current prototype or development direction |
+| --- | --- |
+| Character and interface | Python/Tkinter desktop companion; draggable fox with an existing 73-frame animation set and independent chat interface |
+| Conversation | Controller connects to local Ollama or optionally Gemini; the on-screen companion can remain present without a cloud AI provider |
+| Local memory | Sprocket-scoped SQLite conversation history and settings |
+| Owner-selected observation | Bounded read-only text/DOCX and top-level folder inspection, with separate approval before sending chosen excerpts to cloud AI |
+| Pocket Workshop | Current prototype contains optional UI modules; **generic independent package delivery is still being developed** |
+| Release updates (U3) | Isolated 0.7.4 candidate supports signed-release checks, separate updater, data backups and recovery orchestration; not deployed or certified |
 
-1. **Identity and compute are separate.** Buying the companion never implies unlimited cloud inference.
-2. **Observation is not execution.** The model cannot grant itself access to the file system or shell.
-3. **File permission is explicit.** No chat-supplied file path authorizes a read.
-4. **Document receipts are honest.** Identify source, hash, excerpt, and truncation; distinguish from memory or assumptions.
-5. **User memory stays local by default.**
-6. **Reply progress is truthful.** Full-buffer progressive display is not called token streaming.
-7. **Original artwork provenance and licensing must be resolved** before any public distribution.
+```text
+                Sprocket on Windows
+                        |
+             Character and Chat UI
+                        |
+              Companion Controller
+                  /           \
+          Local Memory      AI Provider
+            (SQLite)      /          \
+                       Ollama      Gemini*
+                         |
+               *optional cloud processing
 
-## Incomplete as of v0.5
+    Owner-selected file observation:
+      permission -> bounded read -> evidence -> optional
+      separate cloud-transmission approval
 
-Persistent document follow-up sessions, detailed source citations, export, Windows installer/MSIX testing, secure retail onboarding, accessible UI checks, and store compliance.
+    Update and Workshop work:
+      development verifier -> staged content -> checks
+      -> activation / recovery
+      (independent Workshop packages not yet verified)
+```
 
-This file describes what has been observed in the prototype and the architecture intended for v1.0. It does not assert that planned functionality exists.
+This diagram is conceptual. It is not a claim that all planned components are production-ready.
+
+## Boundaries we do not want to blur
+
+1. **Identity is separate from the AI provider.** Sprocket remains the same desktop companion when the chosen model changes.
+2. **Observation is not execution.** Seeing a file or folder is not permission to run commands, edit data, or control other applications.
+3. **A chat path is not consent.** The owner chooses what she may inspect.
+4. **A visual reaction is not proof.** An inspection animation should only reflect real application events. It must not invent a success result.
+5. **User memory is local by default.** Cloud model use requires disclosure of the data and provider involved.
+6. **An update is not merely a file copy.** Verified package bytes, compatibility, consent, backups and recovery must be accounted for.
+7. **Workshop content must stay separate.** New devices and animations should be installable without embedding each one directly into the core app.
+
+## What has been demonstrated
+
+The earlier v0.5 reaction prototype recorded **40/40 offline tests passing** and verified a 73-frame art manifest. Subsequent isolated U1/C1/U2/U3 development candidates extended memory protection, capability registration, release verification and updates.
+
+For U3 0.7.4, the internal engineering receipt reports **399 passes and 1 privilege-dependent skip, twice**. That test result is for the isolated host updater, **not** the independent Workshop animation package. The latter remains a separate experiment.
+
+## What is still missing before release
+
+The public release requires real Windows packaged-installer tests, UI and accessibility checks, reliable device-level interruption and recovery tests, security and dependency reviews, commercial artwork clearance, and independent certification. Pricing, future paid add-ons, and exact memory tiers are not finalized.
+
+See [Development status](DEVELOPMENT_STATUS.md), [Release gates](V1_RELEASE_GATES.md), and [Product vision](PRODUCT_VISION.md).
+
+---
+
+*Fenton Lab — Small fox. Big curiosity. Evidence first.*
