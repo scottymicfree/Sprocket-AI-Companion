@@ -94,6 +94,14 @@ Sprocket is not a replacement for E.M.M.A. and does not independently authorize 
 - [ ] Optional secure cloud hosting
 - [ ] Governed Lucy Coding Studio integration
 
+## Development update — October 11, 2026
+
+Fenton Lab's **U3 0.7.4 development candidate** now has an isolated update/recovery test receipt: two internal suite runs each reported **399 passed, 1 skipped (400 total)**. This is **not a production release**: real installation, packaged-runtime, security, UI and independent certification blockers remain. No automatic updates or network polling are enabled.
+
+The next planned Pocket Workshop proof is a separately installable **Mechanic's Diagnostic Device** animation update. The goal is to demonstrate verified add-on installation, animation activation, restart persistence and safe rollback **without permanently embedding the device in Sprocket Core**. This package is **not yet verified or released**.
+
+See the [current development status and release gates](docs/DEVELOPMENT_STATUS.md).
+
 ## Project Status
 
 **Experimental prototype — Active development**
