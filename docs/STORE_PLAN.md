@@ -2,12 +2,12 @@
 
 **App:** Sprocket — AI Desktop Companion  
 **Studio:** Fenton Lab (publisher name subject to Microsoft account verification)  
-**Proposed sale:** USD $4.99 one-time; not yet final or offered  
+**Commercial model:** Planned paid base companion; **price not set** and no offer currently available  
 **Target:** Windows 10/11
 
 ## What's included
 
-The purchase should cover the companion program, owned character customization, local memory, supported local tools, and updates under the eventual product terms. It **does not include unlimited third-party cloud inference**. Supported providers and any separate accounts/charges must be disclosed before purchase.
+The intended base purchase will cover the companion program, core character behavior, a limited local-memory allowance, and free evolution improvements and character-motion updates under eventual product terms. Specific paid add-ons, expanded memory options, and prices are not yet determined. It **does not include unlimited third-party cloud inference**. Supported providers and any separate accounts/charges must be disclosed before purchase.
 
 ## Delivery
 
