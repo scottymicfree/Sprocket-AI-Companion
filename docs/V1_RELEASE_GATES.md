@@ -2,6 +2,8 @@
 
 **Status: NOT READY FOR SALE OR A v1.0.0 TAG.**
 
+Updated October 11, 2026. The historical v0.5 baseline below is retained; newer U1/C1/U2/U3 development status is summarized in [Development status](DEVELOPMENT_STATUS.md).
+
 | Gate | Verified evidence | Remaining work |
 |---|---|---|
 | Code / behavior baseline | v0.5: 40/40 offline Python unit tests passed | Regression suite on final source |
@@ -10,7 +12,7 @@
 | Cloud/provider | Gemini key read from user environment; Ollama loopback mode | Provider live test, secret/storage security review, cost and consent disclosure |
 | Safety | No shell authority in prototype; bounded reads | Full threat review, injection/reparse tests, independent Windows QA |
 | Artwork | Original sheet hash recorded in prototype | Commercial redistribution/license approval — **BLOCKING** |
-| Windows delivery | Python prototype and batch launcher | Store-supported installer/MSIX, install/upgrade/uninstall proof |
+| Windows delivery | U3 isolated 0.7.4 update/recovery candidate; internal suite reported 399/400 tests passed, 1 skipped, twice | Real packaged-runtime/MSIX, visual consent dialogs, hardware interruption, anti-rollback and independent certification; **not deployed** |
 | Customer release | GitHub repository exists | Privacy terms, AI reporting, support channel, Store account, certification, purchase verification |
 
 ## Do not ship until
