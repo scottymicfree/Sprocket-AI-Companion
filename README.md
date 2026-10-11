@@ -77,6 +77,12 @@ No. This is Fenton Lab's public product and progress page. Sprocket's applicatio
 
 More in the [product FAQ](docs/FAQ.md).
 
+## Find Sprocket online
+
+**Official public project:** [Sprocket — AI Desktop Companion](https://github.com/scottymicfree/Sprocket-AI-Companion) · **Fenton Lab's GitHub publisher account:** [scottymicfree](https://github.com/scottymicfree) · **Feedback and questions:** [GitHub Issues](https://github.com/scottymicfree/Sprocket-AI-Companion/issues)
+
+The links above are the verified public project channels. Additional official website, video and social links will be added when their public destinations are confirmed. Sprocket is not yet available through Microsoft Store.
+
 ## Follow the build
 
 This is the first Fenton Lab product we're introducing publicly, and we're building it in the open where we can—showing progress **without presenting unfinished work as a shipped feature**.
