@@ -53,6 +53,16 @@ Each world may have a different number of background layers, sprites, animations
 
 **This is a design proposal, not a shipped feature.** Read the [Living Worlds asset and single-presence contract](docs/SPROCKET_LIVING_WORLDS_ASSET_CONTRACT_V1.md) for the proposed architecture and release gates.
 
+## Sprocket Family — proposed learning companion
+
+We're exploring **Sprocket Family**, a separate guardian-managed experience for children ages **7–12**. The goal is to bring Sprocket's curious personality into guided homework help, reading, math, science, beginner coding, and healthy companionship.
+
+The proposal includes isolated child profiles, a parental dashboard, study-time limits, privacy and safety controls, and optional **local facial recognition for profile selection only**. Camera-free profiles remain essential; a face match would never authorize parent settings. Child privacy, educational quality, and safety validation are prerequisites for any family pilot.
+
+**Family is a product design, not a currently implemented or downloadable child-safe edition.** It will share Sprocket's core animation and permission architecture without changing the original product's release gates.
+
+Read the [unified product plan](docs/UNIFIED_PRODUCT_PLAN.md) for the full Sprocket Desktop, Pocket Workshop, Living Worlds, and Family roadmap.
+
 ## Where development stands
 
 | Milestone | Status |
@@ -63,6 +73,7 @@ Each world may have a different number of background layers, sprites, animations
 | First independently installable Workshop device | **In development; not yet verified** |
 | Windows installer, commercial rights, real-machine and independent certification | **Not complete** |
 | Living Worlds wallpaper engine and world packs | **Design proposal only; not implemented or released** |
+| Sprocket Family (ages 7–12) | **Product proposal only; not implemented or released** |
 | Public release | **Not announced** |
 
 The U3 test count describes automated development testing, **not** public release certification. No production deployment, automatic updater, or network polling has been enabled as part of that candidate.
@@ -98,6 +109,7 @@ The links above are the verified public project channels. Additional official we
 
 This is the first Fenton Lab product we're introducing publicly, and we're building it in the open where we can—showing progress **without presenting unfinished work as a shipped feature**.
 
+- [Unified product plan](docs/UNIFIED_PRODUCT_PLAN.md) — how Desktop, Workshop, Living Worlds, and Family fit together
 - [Development status](docs/DEVELOPMENT_STATUS.md) — what has passed and what is still blocked
 - [What we're building](docs/PRODUCT_VISION.md) — Sprocket's personality, promises, and Pocket Workshop direction
 - [Product FAQ](docs/FAQ.md) — availability, privacy, updates, and ownership
