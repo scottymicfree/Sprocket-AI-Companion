@@ -43,6 +43,16 @@ Our first test concept is **the Mechanic's Diagnostic Device**: Sprocket opens a
 
 Regular evolution improvements and character-motion updates are planned to remain free for existing owners. Optional paid capabilities, memory tiers, and pricing have **not** been finalized.
 
+## Living Worlds — planned desktop environments
+
+Sprocket may eventually have optional, independently installable **Living Worlds**: lightweight desktop environments that portray her exploring without running a second AI companion. The first proposed worlds are **The Laboratory** (motherboard, RAM, GPU, cooling pump, wires, curious inspections and playful mishaps) and **Whispering Woods** (a forest den, local-time lighting, and a mysterious shadow she can never quite catch).
+
+The goal is **one Sprocket, two surfaces**: while the Windows desktop is visible, a lightweight wallpaper simulation may animate; when someone is working in another application, the wallpaper becomes dormant and the normal companion remains available. Wallpaper effects must not interrupt typing, steal focus, block clicks, or compete for CPU/GPU resources unnecessarily.
+
+Each world may have a different number of background layers, sprites, animations and declarative event rules. The world's fox artwork preserves Sprocket's recognizable appearance without requiring her entire companion animation library. Worlds are designed to install, switch, update and uninstall independently. Commercial pricing and availability are undecided.
+
+**This is a design proposal, not a shipped feature.** Read the [Living Worlds asset and single-presence contract](docs/SPROCKET_LIVING_WORLDS_ASSET_CONTRACT_V1.md) for the proposed architecture and release gates.
+
 ## Where development stands
 
 | Milestone | Status |
@@ -52,6 +62,7 @@ Regular evolution improvements and character-motion updates are planned to remai
 | Update and recovery system (U3 0.7.4) | **Isolated candidate**; internal suite reported 399 passes and 1 skipped, twice |
 | First independently installable Workshop device | **In development; not yet verified** |
 | Windows installer, commercial rights, real-machine and independent certification | **Not complete** |
+| Living Worlds wallpaper engine and world packs | **Design proposal only; not implemented or released** |
 | Public release | **Not announced** |
 
 The U3 test count describes automated development testing, **not** public release certification. No production deployment, automatic updater, or network polling has been enabled as part of that candidate.
