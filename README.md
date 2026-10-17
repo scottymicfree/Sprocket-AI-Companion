@@ -1,124 +1,197 @@
-# 🦊 Meet Sprocket
+<div align="center">
 
-### A little fox with a big curiosity.
+# Fenton Lab · Sprocket
 
-**An animated AI desktop companion from Fenton Lab.**
+### Character companions that feel alive and respect your boundaries.
 
-Sprocket is a small fox with a busy mind, bright blue eyes, and a habit of getting curious about whatever you're working on.
+**Sprocket Desktop**, an animated companion for Windows
+**Sprocket Family**, a learning companion for ages 7–12
 
-She lives on your Windows desktop, moves and reacts, chats with you, and can help look at documents **you choose to show her**. Underneath the personality is a straightforward idea: your companion should feel alive without treating your computer—or your trust—as an open invitation.
+**🟠 Coming Soon: Windows release in preparation. Release date to be confirmed.**
 
-> **Development status:** Sprocket is an experimental Windows prototype. **She is not yet available for purchase or public download.** Follow along as Fenton Lab builds and verifies the first release.
+[Desktop](#sprocket-desktop-a-windows-companion) · [Family](#sprocket-family-a-learning-companion-for-ages-712) · [Screenshots](#screenshots) · [Privacy](#local-first-by-design) · [Learning Library](#learning-library-and-study-plans) · [Progress](#development-milestones) · [Follow](#follow-development)
 
----
-
-## Small companion. Real boundaries.
-
-| What makes Sprocket *Sprocket* | What that means today |
-| --- | --- |
-| 🦊 **A character, not just a chat box** | A draggable animated desktop fox with expressive reactions and an existing 73-frame animation collection. |
-| 💬 **Someone to talk to** | A desktop chat experience with local Ollama or an optional Gemini provider. |
-| 🧠 **A memory that lives with you** | Conversation history stored locally in Sprocket's SQLite data store. |
-| 📁 **Curious, but asks first** | Owner-selected, bounded, read-only file and folder inspection; cloud submission of selected document content requires separate approval. |
-| 🧰 **Built to grow** | Pocket Workshop is an in-development system for optional capabilities, devices and animations—not a released add-on store. |
-| 🔍 **Evidence matters** | We design Sprocket to distinguish actual observations from AI-generated explanations. That principle is still being tested and refined. |
-
-She is intended to be enjoyable when you're simply chatting, and useful when you want a hand looking at something on your desktop. She isn't marketed as an autonomous operator or an all-access administrator.
-
-## The idea behind her
-
-**Personality should be expressive. Permissions should be precise.**
-
-Sprocket's animations give her character; they don't give her extra authority. A model saying *“I checked the file”* isn't proof that anything was opened. A file path in a chat isn't permission to read it. And connecting an optional cloud model shouldn't silently turn local files into cloud data.
-
-That's the standard we're working toward: a companion that feels personal **and** respects what belongs to you.
-
-## Meet Pocket Workshop — in development
-
-Sprocket's planned **Pocket Workshop** is where she may gain optional tools, devices, and other capabilities as Fenton Lab develops them. The aim is to update her through authenticated, recoverable packages—not by permanently wiring every new feature into her original application.
-
-Our first test concept is **the Mechanic's Diagnostic Device**: Sprocket opens a tiny circuit-board tool, connects probes, scans an owner-approved file or folder, and reacts to the real result.
-
-**This device pack is a development prototype, not an available product.** The current experiment must still prove independent package installation, activation, restart persistence, uninstall, and rollback.
-
-Regular evolution improvements and character-motion updates are planned to remain free for existing owners. Optional paid capabilities, memory tiers, and pricing have **not** been finalized.
-
-## Living Worlds — planned desktop environments
-
-Sprocket may eventually have optional, independently installable **Living Worlds**: lightweight desktop environments that portray her exploring without running a second AI companion. The first proposed worlds are **The Laboratory** (motherboard, RAM, GPU, cooling pump, wires, curious inspections and playful mishaps) and **Whispering Woods** (a forest den, local-time lighting, and a mysterious shadow she can never quite catch).
-
-The goal is **one Sprocket, two surfaces**: while the Windows desktop is visible, a lightweight wallpaper simulation may animate; when someone is working in another application, the wallpaper becomes dormant and the normal companion remains available. Wallpaper effects must not interrupt typing, steal focus, block clicks, or compete for CPU/GPU resources unnecessarily.
-
-Each world may have a different number of background layers, sprites, animations and declarative event rules. The world's fox artwork preserves Sprocket's recognizable appearance without requiring her entire companion animation library. Worlds are designed to install, switch, update and uninstall independently. Commercial pricing and availability are undecided.
-
-**This is a design proposal, not a shipped feature.** Read the [Living Worlds asset and single-presence contract](docs/SPROCKET_LIVING_WORLDS_ASSET_CONTRACT_V1.md) for the proposed architecture and release gates.
-
-## Sprocket Family — proposed learning companion
-
-We're exploring **Sprocket Family**, a separate guardian-managed experience for children ages **7–12**. The goal is to bring Sprocket's curious personality into guided homework help, reading, math, science, beginner coding, and healthy companionship.
-
-The proposal includes isolated child profiles, a parental dashboard, study-time limits, privacy and safety controls, and optional **local facial recognition for profile selection only**. Camera-free profiles remain essential; a face match would never authorize parent settings. Child privacy, educational quality, and safety validation are prerequisites for any family pilot.
-
-**Family is a product design, not a currently implemented or downloadable child-safe edition.** It will share Sprocket's core animation and permission architecture without changing the original product's release gates.
-
-Read the [unified product plan](docs/UNIFIED_PRODUCT_PLAN.md) for the full Sprocket Desktop, Pocket Workshop, Living Worlds, and Family roadmap.
-
-## Where development stands
-
-| Milestone | Status |
-| --- | --- |
-| Animated Windows companion, chat and local memory | Working prototype; release testing still needed |
-| Owner-selected read-only file inspection | Prototype implemented; further security and usability testing needed |
-| Update and recovery system (U3 0.7.4) | **Isolated candidate**; internal suite reported 399 passes and 1 skipped, twice |
-| First independently installable Workshop device | **In development; not yet verified** |
-| Windows installer, commercial rights, real-machine and independent certification | **Not complete** |
-| Living Worlds wallpaper engine and world packs | **Design proposal only; not implemented or released** |
-| Sprocket Family (ages 7–12) | **Product proposal only; not implemented or released** |
-| Public release | **Not announced** |
-
-The U3 test count describes automated development testing, **not** public release certification. No production deployment, automatic updater, or network polling has been enabled as part of that candidate.
-
-Read the [detailed development status](docs/DEVELOPMENT_STATUS.md) and [release requirements](docs/V1_RELEASE_GATES.md) for specifics.
-
-## Questions people ask
-
-**Can I install Sprocket today?**  
-Not through this public repository. The application is still in private development; there is no approved public installer or store listing.
-
-**Does she work without the cloud?**  
-Her desktop companion can run without a cloud model, and development supports a local Ollama option. AI quality and features depend on the provider you choose; optional cloud models can involve third-party data processing and costs.
-
-**Does she read all my files?**  
-No. The current document-reading workflow is built around explicit owner-selected, bounded read-only access. Further privacy and security validation remains part of release work.
-
-**Will updates change the companion I've grown attached to?**  
-The design goal is to preserve Sprocket's identity, memory and existing motions through verified updates, with backup and recovery checks. That protection must pass real-world certification before release.
-
-**Is the code open source?**  
-No. This is Fenton Lab's public product and progress page. Sprocket's application source and commercial artwork are not licensed for public reuse by this repository.
-
-More in the [product FAQ](docs/FAQ.md).
-
-## Find Sprocket online
-
-**Official public project:** [Sprocket — AI Desktop Companion](https://github.com/scottymicfree/Sprocket-AI-Companion) · **Fenton Lab's GitHub publisher account:** [scottymicfree](https://github.com/scottymicfree) · **Feedback and questions:** [GitHub Issues](https://github.com/scottymicfree/Sprocket-AI-Companion/issues)
-
-The links above are the verified public project channels. Additional official website, video and social links will be added when their public destinations are confirmed. Sprocket is not yet available through Microsoft Store.
-
-## Follow the build
-
-This is the first Fenton Lab product we're introducing publicly, and we're building it in the open where we can—showing progress **without presenting unfinished work as a shipped feature**.
-
-- [Unified product plan](docs/UNIFIED_PRODUCT_PLAN.md) — how Desktop, Workshop, Living Worlds, and Family fit together
-- [Development status](docs/DEVELOPMENT_STATUS.md) — what has passed and what is still blocked
-- [What we're building](docs/PRODUCT_VISION.md) — Sprocket's personality, promises, and Pocket Workshop direction
-- [Product FAQ](docs/FAQ.md) — availability, privacy, updates, and ownership
-- [Architecture](docs/ARCHITECTURE.md) — technical design boundaries
-- [Security policy](SECURITY.md) — how to raise security concerns safely
-- [Repository policy](docs/REPOSITORY_POLICY.md) — why source and artwork stay private
-
-**Fenton Lab** · Local-first by design · Evidence before claims
+</div>
 
 ---
 
-*Small fox. Big curiosity. Your computer, your call.* 🦊
+## About Fenton Lab
+
+Fenton Lab makes character-driven software companions. Each one pairs a character people enjoy having around with useful features and permissions the user controls.
+
+Sprocket is our first character: a small, curious fox. She comes in two editions that share one engine and one set of principles:
+- the character's personality never gives her extra access;
+- your data stays on your computer unless you choose otherwise;
+- we don't call a feature finished until it has been tested.
+
+## Sprocket Desktop: a Windows companion
+
+Sprocket lives on your Windows desktop. She moves, reacts, chats in a small **Comm-Link** window, and helps with documents **you choose to show her**.
+
+| | Working in the current pre-release build | Not yet released |
+| --- | --- | --- |
+| 🦊 **Character** | An animated desktop fox you can drag around, with idle behaviour, looking around and reactions while you chat | New character art and motions are being prepared |
+| 💬 **Chat** | Comm-Link chat with a local AI model (Ollama) running on your own PC. With no model set up she stays in **Offline mode and makes no AI calls** | Any cloud AI provider would be optional and off by default, and is still under review for the release |
+| 🧠 **Memory** | Conversation history and saved notes stored locally, with verified safety backups | |
+| 📁 **Files** | Read-only reading of a file or folder you pick. A file path typed into the chat is never treated as permission | |
+| 🧰 **Pocket Workshop** | Built-in gauges show how full the chat's memory is and what Sprocket is doing | Optional add-on devices, tools and animations are in development |
+| 🔄 **Updates** | Verified update and recovery system, tested only on an isolated development copy | Not deployed. Signing and real-installer testing are still to do |
+
+## Sprocket Family: a learning companion for ages 7–12
+
+Sprocket Family is a **working development prototype**, currently in owner testing. A parent sets everything up; the child learns alongside Sprocket. **It runs entirely offline: no internet, no cloud AI, no ads and no purchases.**
+
+What we've built and tested so far:
+- **Parent controls:** child profiles that use nicknames only, a parent PIN, a daily time limit and required breaks for each child, and a choice of which subjects each child can use.
+- **Learning activities:** reading, math, science and beginner coding (programming a path across a small board), plus step-by-step homework help that guides the child without giving away answers.
+- **Offline content:** every lesson and question is reviewed and built into the app. Nothing is generated by an AI.
+- **A teaching companion:** Sprocket reacts to what's happening in the lesson. She looks at the question, celebrates a right answer, encourages after a wrong one, and rests during breaks.
+- **Local progress:** stars and progress records are saved only on the family's computer. Chat text is never stored, and a parent can export or delete a child's data.
+- **Learning Library:** parent-approved study plans, with a first fractions package ([details below](#learning-library-and-study-plans)).
+
+**Not available yet:**
+- Sprocket Family is **not released, not available for download, and not certified as child-safe**.
+- It has no general-purpose AI chat: the child edition's conversation is offline and pattern-based.
+- Child-safety, privacy and accessibility reviews are still to come before any release.
+
+## Screenshots
+
+Taken from real running development builds on October 16, 2026, using demo profiles. The character artwork is still under rights review, so these images show **the app's screens only**. Sprocket herself (and her speech bubble) is cropped out.
+
+### Sprocket Family
+
+<table>
+<tr>
+<td width="50%"><img src="media/screenshots/family-parent-dashboard.png" alt="Sprocket Family parent dashboard with two demo child profiles, showing age group, minutes used today, break interval and stars, with Start Learning, Edit, Progress and Delete buttons" width="100%"><br><sub>Parent dashboard: child profiles, time limits and breaks</sub></td>
+<td width="50%"><img src="media/screenshots/family-child-home.png" alt="Child home screen greeting a demo child named Ava, with a Fractions Adventure study-plan card and tiles for Reading, Math, Science, Coding, Homework Helper and Talk with Sprocket" width="100%"><br><sub>A child's home screen, with a parent-approved study plan at the top</sub></td>
+</tr>
+<tr>
+<td><img src="media/screenshots/family-reading-lesson.png" alt="Reading lesson: a short story about planting bean seeds, followed by a question card asking how many seeds Mia planted, with three answer buttons" width="100%"><br><sub>A reading lesson with a question</sub></td>
+<td><img src="media/screenshots/family-coding-puzzle.png" alt="Coding puzzle: a grid board with a robot, a gear goal and a wall; the program FORWARD LEFT FORWARD has run, and a message explains that move 3 bumped into a wall" width="100%"><br><sub>Beginner coding: the board shows exactly where a program went wrong</sub></td>
+</tr>
+<tr>
+<td><img src="media/screenshots/family-math-practice.png" alt="Math practice screen asking what is 67 minus 27, with an answer box and a Check button" width="100%"><br><sub>Math practice</sub></td>
+<td><img src="media/screenshots/family-fractions-hint.png" alt="Fractions question: a rectangle cut into four equal parts with three shaded and marked with dots; the wrong answer 1/4 is greyed out and a hint says to count all the equal parts first" width="100%"><br><sub>A fractions question with a hint after a wrong answer</sub></td>
+</tr>
+<tr>
+<td><img src="media/screenshots/family-fractions-number-line.png" alt="Number line question asking the child to click the mark where 2/4 goes on a line from 0 to 1 divided into four equal steps" width="100%"><br><sub>Number lines</sub></td>
+<td><img src="media/screenshots/family-fractions-match.png" alt="Matching question: a bar, a square and a circle each show a shaded fraction, and the child picks 1/2, 1/4 or 1/3 under each picture" width="100%"><br><sub>Matching fractions to pictures</sub></td>
+</tr>
+</table>
+
+### Learning Library (parent view)
+
+<table>
+<tr>
+<td width="50%"><img src="media/screenshots/family-learning-library-packages.png" alt="Learning Library showing the Fractions Adventure package: Math, Fractions, ages 7 to 9, 10 lessons of 15 minutes, skills taught, prerequisites, an included-pilot status line and a note that no AI service or internet is required" width="100%"><br><sub>My Packages</sub></td>
+<td width="50%"><img src="media/screenshots/family-study-plan-builder.png" alt="Create Study Plan form with choices for child, package, subject, topic, age group, duration, study days, number of sessions, session length and starting point; learning mode is offline" width="100%"><br><sub>Study Plan builder</sub></td>
+</tr>
+<tr>
+<td><img src="media/screenshots/family-study-plan-preview.png" alt="Plan preview listing learning objectives and a dated ten-session schedule, stating that no AI service or internet is required" width="100%"><br><sub>Preview before the parent approves</sub></td>
+<td><img src="media/screenshots/family-child-learning-progress.png" alt="Child Learning Progress table listing eight fraction skills with their state, right-first-try count, questions answered, level and date last practised, plus Pause, Modify, Unassign and Delete buttons" width="100%"><br><sub>Skill-by-skill progress and plan controls</sub></td>
+</tr>
+</table>
+
+### Sprocket Desktop
+
+<table>
+<tr>
+<td width="50%"><img src="media/screenshots/desktop-commlink-chat-offline.png" alt="Sprocket Comm-Link chat window in Offline mode with no AI calls, showing Sprocket's welcome message and context and activity gauges" width="100%"><br><sub>The Comm-Link chat window, in Offline mode</sub></td>
+<td width="50%"><img src="media/screenshots/desktop-commlink-tools.png" alt="Comm-Link TOOLS tray with an AI provider selector set to Offline, and buttons for File, Folder, Page, Forget, Copy, Remember, Notes, Clear, Data and Report" width="100%"><br><sub>The TOOLS tray: everything Sprocket can work with, chosen by you</sub></td>
+</tr>
+</table>
+
+<sub>About these images: genuine, unedited screen captures, cropped to the app's own screens. The provider choices shown come from a development build and may differ in the release. [How they were made](media/screenshots/README.md)</sub>
+
+## What makes Sprocket different
+
+- **A character, not a chat box.** Sprocket moves, looks around and reacts. In Sprocket Family she takes part in the lesson: her motions suit what's happening, and she never repeats the same one twice in a row.
+- **Her personality gives her no extra access.** An animation or a confident reply is never proof that something happened, and never permission to do more.
+- **Permissions you can see.** Files are read only when you choose them, read-only, and only for the conversation you chose them for. FORGET clears them.
+- **Built to grow without disruption.** Content and add-ons are designed as separate, checked packages, so new learning material or capabilities can arrive without rewriting the app you already have.
+
+## Local-first by design
+
+- **Desktop:** conversations, notes and settings stay on your PC. Local AI runs on your own hardware. Offline mode makes no AI calls at all.
+- **Family:** the child edition works entirely offline. It contains no network code, cloud AI, analytics, advertising or purchases. Profiles use nicknames, chat text is never saved, and children can't reach the parent settings.
+- **No hidden telemetry** in either edition.
+
+These describe how the current development builds work. They are not yet independently audited or certified.
+
+## Learning Library and study plans
+
+The Learning Library is **implemented in the Sprocket Family development prototype** and is in owner testing. It lets a parent add learning content without waiting for an app update:
+
+1. **Browse packages.** The first is **Fractions Adventure**: 10 sessions of about 15 minutes for ages 7–9, included with the prototype.
+2. **Build a plan.** Choose the child, subject, topic, length, study days and session length. If a choice isn't supported, the builder says why and suggests alternatives; it never makes up lessons.
+3. **Preview, then approve with the parent PIN.** Until a parent approves it, the child can't see the plan. If the plan or the package changes, it needs approving again.
+4. **Sprocket teaches it offline.** New practice questions are made on the computer from reviewed question types (shaded shapes, number lines, comparing fractions, equivalent fractions and more). Every answer is checked with exact arithmetic before Sprocket reacts.
+5. **Follow progress by skill.** Each skill shows Not started, Practicing, Developing or Demonstrated. One lucky answer never counts as mastery. Difficulty adjusts gently, with hints, worked examples and no penalties.
+
+There's no package store, no purchasing and no downloading of packages yet. More packages and subjects are planned, but none is available yet.
+
+## Development milestones
+
+These are internal development results from Fenton Lab's own automated tests, **not independent certification**.
+
+| Milestone | Status | Internal evidence |
+| --- | --- | --- |
+| Sprocket Desktop: animated companion, Comm-Link chat, local memory, read-only file help | Working pre-release build (0.7.5) | 133-file build fingerprint checked |
+| Desktop updates and recovery (U3) | Isolated development copy only; **not deployed** | 399 passed, 1 skipped, of 400 automated tests, run twice |
+| Windows installer | Test installer built; **not yet installed or tested** on clean machines | Signing and licensing still open |
+| Sprocket Family: profiles, parent dashboard, time limits, lessons, coding, homework help | Working prototype in owner testing | Automated test suite |
+| Family: Sprocket's teaching reactions and motion variety | Working in the prototype | Real-window recordings; automated tests |
+| Family: Learning Library, Study Builder, Fractions Adventure | Working in the prototype, in owner testing | 137 automated tests pass (Oct 16, 2026), including 12,000 generated fraction questions checked with exact arithmetic |
+| Child-safety, privacy and accessibility reviews | **Not started** | — |
+| Public release | **Not announced** | — |
+
+More detail: [Development status](docs/DEVELOPMENT_STATUS.md) · [Release requirements](docs/V1_RELEASE_GATES.md)
+
+## Coming next
+
+These are plans, **not available features**:
+- **Pocket Workshop:** optional add-on devices, tools and animations for Sprocket Desktop.
+- **New Sprocket motions:** a book, pointing, a pencil, tools, stretches and more celebrations, once the new artwork is cleared.
+- **More Learning Library packages and subjects** for Sprocket Family.
+- **Living Worlds:** optional desktop scenes, still a [design proposal](docs/SPROCKET_LIVING_WORLDS_ASSET_CONTRACT_V1.md).
+- **Liberty:** a separate bald eagle companion, in early development.
+
+## Availability
+
+**Coming Soon: Windows release in preparation.** There is no download, Microsoft Store listing, waitlist or checkout yet. Before release we still need:
+- commercial clearance for the character artwork;
+- a verified, signed Windows package, tested on clean machines;
+- the applicable Microsoft Store requirements;
+- a published privacy policy and support contact;
+- for Sprocket Family, child-safety and privacy reviews;
+- final approval to release.
+
+The planned model is a one-time purchase for Sprocket Desktop, with free character and motion updates for existing owners. Optional add-ons and learning packages may be offered later. **Pricing and dates aren't set.**
+
+## Follow development
+
+- ⭐ **Star or watch this repository** to see updates as they're published.
+- 💬 **Questions and feedback:** [GitHub Issues](https://github.com/scottymicfree/Sprocket-AI-Companion/issues). Please don't post personal information there.
+- 🔒 **Security concerns:** see the [security policy](SECURITY.md).
+- **Fenton Lab on GitHub:** [scottymicfree](https://github.com/scottymicfree)
+
+These are the only official channels right now. A website, social media accounts and a business contact will be added here once they are set up and confirmed.
+
+**For partners, distributors and press:** [Fenton Lab overview](docs/FENTON_LAB_OVERVIEW.md) · [Press and partner overview](docs/PRESS_AND_PARTNER_OVERVIEW.md)
+
+## Further reading
+
+- [Fenton Lab overview](docs/FENTON_LAB_OVERVIEW.md)
+- [Press and partner overview](docs/PRESS_AND_PARTNER_OVERVIEW.md)
+- [Sprocket Family](docs/SPROCKET_FAMILY.md)
+- [Unified product plan](docs/UNIFIED_PRODUCT_PLAN.md)
+- [Development status](docs/DEVELOPMENT_STATUS.md)
+- [Product FAQ](docs/FAQ.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Repository policy](docs/REPOSITORY_POLICY.md)
+
+This is Fenton Lab's public product page. The application source and character artwork are private and not licensed for reuse.
+
+---
+
+<div align="center"><sub><b>Fenton Lab</b> · Local-first by design · Evidence before claims</sub></div>

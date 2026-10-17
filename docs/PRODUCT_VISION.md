@@ -36,7 +36,7 @@ The motion is visual feedback for bounded inspection, not a hacking or exploitat
 
 ## What ownership should mean
 
-The intention is a paid base companion with a modest local-memory allowance, with exact product terms still to be decided. Fenton Lab plans free evolution improvements and character-motion updates for base owners. Optional added capabilities or expanded memory may be offered in the future, but neither their pricing nor their entitlement policy has been finalized.
+The intention is a one-time purchase of the base companion, with exact product terms still to be decided. Fenton Lab plans free evolution improvements and character-motion updates for base owners. Optional added capabilities or content packages may be offered in the future, but neither their pricing nor their entitlement policy has been finalized.
 
 There is no public sale, paid add-on catalog, payment integration, or automatic-update service live today.
 

@@ -7,7 +7,7 @@
 
 ## What's included
 
-The intended base purchase will cover the companion program, core character behavior, a limited local-memory allowance, and free evolution improvements and character-motion updates under eventual product terms. Specific paid add-ons, expanded memory options, and prices are not yet determined. It **does not include unlimited third-party cloud inference**. Supported providers and any separate accounts/charges must be disclosed before purchase.
+The intended base purchase will cover the companion program, core character behavior, local memory, and free evolution improvements and character-motion updates under eventual product terms. Specific paid add-ons and prices are not yet determined. It **does not include unlimited third-party cloud inference**. Supported providers and any separate accounts/charges must be disclosed before purchase.
 
 ## Delivery
 

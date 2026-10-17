@@ -16,7 +16,7 @@ She is a separate companion. Lucy AIOS and E.M.M.A. have distinct governance and
 
 ## Does Sprocket need internet access?
 
-Her animated desktop experience does not depend on a cloud model. She has a local Ollama integration for AI responses and an optional Gemini integration that can use an internet connection. Actual capability, performance and cost depend on the provider and configuration. Not every AI feature is guaranteed to work fully offline.
+Her animated desktop experience does not depend on a cloud model. She has a local Ollama integration for AI responses, and with no model set up she stays in Offline mode and makes no AI calls. Development builds also contain an optional Gemini integration; whether any cloud provider is offered in the first release is still under review, and it would be off by default. Actual capability, performance and cost depend on the provider and configuration. Not every AI feature is guaranteed to work fully offline.
 
 ## Where is memory kept?
 
@@ -40,7 +40,7 @@ It is the first proposed Workshop animation-package test. Sprocket will visually
 
 ## Do I have to buy Sprocket again every time she improves?
 
-The intended ownership model includes free evolution improvements and character animation updates for existing base owners. Optional capabilities and larger memory tiers could be offered separately in the future. Specific paid features, prices and final terms remain undecided.
+The intended ownership model includes free evolution improvements and character animation updates for existing base owners. Optional capabilities and educational content packages could be offered separately in the future. There are no plans to charge for memory. Specific paid features, prices and final terms remain undecided.
 
 ## Is Sprocket open source?
 

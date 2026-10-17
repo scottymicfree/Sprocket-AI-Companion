@@ -1,4 +1,4 @@
-# Sprocket development status — October 12, 2026
+# Sprocket development status — updated October 16, 2026
 
 **Project:** Sprocket AI Desktop Companion · **Publisher:** Fenton Lab  
 **Public status:** Experimental development; **no commercial release or certified installer**.
@@ -21,7 +21,19 @@ The U3 prototype is designed to verify update signatures, install side-by-side, 
 
 ## Parallel product tracks
 
-Sprocket Desktop 0.7.5 packaging and release verification continue independently of proposed Sprocket Family and Living Worlds work. These future experiences do not expand the current installer acceptance scope. See the [unified product plan](UNIFIED_PRODUCT_PLAN.md).
+Sprocket Desktop 0.7.5 packaging and release verification continue independently of Sprocket Family and Living Worlds work, which do not expand the current installer acceptance scope. See the [unified product plan](UNIFIED_PRODUCT_PLAN.md).
+
+### Sprocket Family: update of October 16, 2026
+
+| Milestone | Internal development result | Public status |
+| --- | --- | --- |
+| Guardian dashboard, nickname-only profiles, PIN, time limits and breaks | Implemented; automated and real-window tests | Owner testing; not released |
+| Reading, math, science, beginner coding, guided homework help, offline conversation | Implemented with built-in, reviewed content | Owner testing; not released |
+| Sprocket's teaching presence and motion variety | Implemented with existing frames; checked in real-window recordings | Owner testing; new artwork still needed |
+| Learning Library: Study Builder, parent approval, Fractions Adventure (10 sessions, ages 7–9) | Implemented; 137 automated tests pass, including 12,000 generated fraction questions checked with exact arithmetic | Owner testing; not released |
+| Child-safety, privacy, accessibility and educator review | Not started | Required before any pilot or release |
+
+The Family prototype runs fully offline, with no cloud AI, analytics, advertising, purchases or camera. These results are internal development evidence, not certification. See [Sprocket Family](SPROCKET_FAMILY.md).
 
 ## Next experiment — Pocket Workshop device animation
 

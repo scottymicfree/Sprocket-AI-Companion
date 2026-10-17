@@ -1,5 +1,5 @@
 # Sprocket — Unified Product Plan
-**Fenton Lab | Public product direction | 2026-10-12 | Planning document**
+**Fenton Lab | Public product direction | updated 2026-10-16 | Planning document**
 
 > Sprocket is an experimental Windows desktop companion. This document describes current prototypes and intended product directions, not a feature availability promise, public release announcement, or certification.
 
@@ -12,7 +12,7 @@
 | Sprocket Desktop | General desktop users | Animated fox, conversation, local memory, owner-selected file assistance | Experimental Windows prototype |
 | Pocket Workshop | Sprocket owners | Modular official devices, animation and capability packs | In development; not a released marketplace |
 | Living Worlds | Sprocket owners | Optional lightweight wallpaper scenes sharing one character identity | Design proposal |
-| Sprocket Family | Families with children ages 7–12 | Guided homework, healthy companionship, guardian controls | Newly proposed product track; not implemented or released |
+| Sprocket Family | Families with children ages 7–12 | Guided learning, healthy companionship, guardian controls | Working development prototype in owner testing; not released |
 
 ## Shared design principles
 1. **One character, one core engine:** reuse identity, animation, events, and rendering; do not run a second hidden companion in wallpaper mode.
@@ -21,7 +21,7 @@
 4. **Evidence before claims:** differentiate observed results from simulated or generated explanations.
 5. **Modular growth:** verified, recoverable updates and separately governed add-ons.
 6. **Resource respect:** idle wallpaper and character animations must not steal focus or obstruct other applications.
-7. **Clear commercial boundaries:** application source and character artwork are not open source. Pricing, optional paid Workshop packs, and memory tiers remain undecided. Free character evolution and motion updates are intended for existing owners.
+7. **Clear commercial boundaries:** application source and character artwork are not open source. Pricing and optional paid Workshop packs or content packages remain undecided; there are no plans to charge for memory. Free character evolution and motion updates are intended for existing owners.
 
 ## Sprocket Desktop
 The base experience is a draggable animated fox with expressive reactions, desktop chat, local SQLite conversation history, optional Ollama/Gemini providers, and explicitly owner-selected bounded read-only file inspection. The existing 73-frame animation collection is part of prototype history, not a claim that every motion is release-certified.
@@ -33,6 +33,8 @@ A Fenton Lab-controlled extension surface for approved devices, behaviors, learn
 Planned independently managed scenes include The Laboratory and Whispering Woods. One Sprocket identity spans the companion and wallpaper presentation. Wallpaper activity becomes dormant when not relevant; scene assets and declarative events must remain lightweight and nonintrusive.
 
 ## Sprocket Family (ages 7–12)
+
+> **Update, October 16, 2026:** a camera-free, fully offline Family prototype now exists and is in owner testing: guardian dashboard, nickname-only profiles, time limits and breaks, reading, math, science, coding, homework guidance, Sprocket's teaching reactions, and the Learning Library with parent-approved study plans. See [Sprocket Family](SPROCKET_FAMILY.md). The goals and gates below remain the plan for any release.
 **Product goal:** a curious fox who supports learning and companionship without replacing parents, teachers, or human friendships.
 
 ### Child experience
@@ -45,7 +47,7 @@ Planned independently managed scenes include The Laboratory and Whispering Woods
 - Protected dashboard for child profiles, study-time limits, approved AI providers, file permissions, learning summaries, alerts, retention, export, and deletion.
 - Default camera off and cloud off; no purchases or administrative privilege from child profiles.
 - Separate child memory scopes; switching profiles invalidates old permissions and outstanding requests.
-- Optional future **local** face matching for profile selection only, subject to consent, spoofing tests, and deletion controls. Face matching never authorizes parent actions; camera-free selection must remain available.
+- The current prototype has no camera or biometric features. Optional future **local** face matching for profile selection only remains a separate proposal, subject to consent, spoofing tests, and deletion controls. Face matching never authorizes parent actions; camera-free selection must remain available.
 
 ### Safety and privacy gates
 - Enforce policy before and after model generation, including when a local model is used; fail closed for unsafe capabilities.
