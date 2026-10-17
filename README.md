@@ -1,15 +1,16 @@
 <div align="center">
 
-# Fenton Lab · Sprocket
+# Fenton Lab
 
-### Character companions that feel alive and respect your boundaries.
+### Distinct, character-driven companion software that respects your boundaries.
 
-**Sprocket Desktop**, an animated companion for Windows
-**Sprocket Family**, a learning companion for ages 7–12
+**Sprocket Desktop**, an animated fox companion for Windows: *our first release priority*
+**Sprocket Family**, a learning companion for ages 7–12: *working prototype*
+**Liberty, The Desktop Eagle**: *early development*
 
-**🟠 Coming Soon: Windows release in preparation. Release date to be confirmed.**
+**🟠 Sprocket: Coming Soon. Windows release in preparation. Release date to be confirmed.**
 
-[Desktop](#sprocket-desktop-a-windows-companion) · [Family](#sprocket-family-a-learning-companion-for-ages-712) · [Screenshots](#screenshots) · [Privacy](#local-first-by-design) · [Learning Library](#learning-library-and-study-plans) · [Progress](#development-milestones) · [Follow](#follow-development)
+[Desktop](#sprocket-desktop-a-windows-companion) · [Family](#sprocket-family-a-learning-companion-for-ages-712) · [Liberty](#liberty-the-desktop-eagle) · [Screenshots](#screenshots) · [Privacy](#local-first-by-design) · [Learning Library](#learning-library-and-study-plans) · [Progress](#development-milestones) · [Follow](#follow-development)
 
 </div>
 
@@ -17,12 +18,17 @@
 
 ## About Fenton Lab
 
-Fenton Lab makes character-driven software companions. Each one pairs a character people enjoy having around with useful features and permissions the user controls.
+Fenton Lab develops **distinct, character-driven companions** for the desktop. Each has its own identity and personality and pairs it with genuinely useful features and permissions the user controls.
 
-Sprocket is our first character: a small, curious fox. She comes in two editions that share one engine and one set of principles:
-- the character's personality never gives her extra access;
+- **Sprocket**, a small, curious fox, is our first character and **first release priority**. She comes in two editions: Desktop and Family.
+- **Liberty**, a focused desktop eagle, is our second, **in early development**.
+
+All our companions follow the same principles:
+- a character's personality never gives it extra access;
 - your data stays on your computer unless you choose otherwise;
 - we don't call a feature finished until it has been tested.
+
+[How we build them](docs/ENGINEERING_APPROACH.md)
 
 ## Sprocket Desktop: a Windows companion
 
@@ -147,6 +153,14 @@ These are internal development results from Fenton Lab's own automated tests, **
 
 More detail: [Development status](docs/DEVELOPMENT_STATUS.md) · [Release requirements](docs/V1_RELEASE_GATES.md)
 
+## Liberty, The Desktop Eagle
+
+*Early development, further from release than Sprocket.* Liberty is Fenton Lab's second companion, a separate application with her own identity and memory. **What works today:** her desktop window and animation system (development milestone 0.2), shown for now with placeholder graphics.
+
+Her planned signature capability is **Patriot Lens**. You deliberately select part of your screen, then choose **Research This**, **Explain This**, **Debug or Improve**, or **Teach Me About This**, and the conversation keeps only the context you allow. It's designed to work locally first, look at your screen only with your consent each time, keep its own memory, and never read files or run anything without your permission.
+
+**AI chat, screen research and the final eagle animations are not finished.** [Read more about Liberty](docs/LIBERTY.md)
+
 ## Coming next
 
 These are plans, **not available features**:
@@ -154,7 +168,7 @@ These are plans, **not available features**:
 - **New Sprocket motions:** a book, pointing, a pencil, tools, stretches and more celebrations, once the new artwork is cleared.
 - **More Learning Library packages and subjects** for Sprocket Family.
 - **Living Worlds:** optional desktop scenes, still a [design proposal](docs/SPROCKET_LIVING_WORLDS_ASSET_CONTRACT_V1.md).
-- **Liberty:** a separate bald eagle companion, in early development.
+- **Liberty:** Patriot Lens, AI chat and final eagle artwork ([details](docs/LIBERTY.md)).
 
 ## Availability
 
@@ -184,6 +198,8 @@ These are the only official channels right now. A website, social media accounts
 - [Fenton Lab overview](docs/FENTON_LAB_OVERVIEW.md)
 - [Press and partner overview](docs/PRESS_AND_PARTNER_OVERVIEW.md)
 - [Sprocket Family](docs/SPROCKET_FAMILY.md)
+- [Liberty, The Desktop Eagle](docs/LIBERTY.md)
+- [Engineering approach](docs/ENGINEERING_APPROACH.md)
 - [Unified product plan](docs/UNIFIED_PRODUCT_PLAN.md)
 - [Development status](docs/DEVELOPMENT_STATUS.md)
 - [Product FAQ](docs/FAQ.md)

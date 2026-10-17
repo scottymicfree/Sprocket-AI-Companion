@@ -16,11 +16,13 @@ We think software companions should be good company and genuinely useful, while 
 | --- | --- | --- |
 | **Sprocket Desktop** | An animated fox companion for Windows. She chats through a local AI model, keeps a local memory, and helps with files you choose to show her | Pre-release; working development builds; not yet available |
 | **Sprocket Family** | A learning companion for ages 7–12. Parents control profiles, time limits and study plans; the child learns reading, math, science and beginner coding with Sprocket, entirely offline | Working development prototype in owner testing; not released |
-| **Liberty** | An independent bald eagle companion | Early development; details to follow |
+| **Liberty, The Desktop Eagle** | A separate eagle companion. Patriot Lens (planned) would research, explain, improve or teach about a part of the screen the user deliberately selects | Early development. Milestone 0.2 has a working desktop window and animation system with placeholder graphics. AI chat, screen research and final artwork are not built. [Details](LIBERTY.md) |
 
 ## How we build
 
-- **One reusable companion engine.** Animation, reactions, speech and timing are shared. Each character keeps its own identity, art and personality.
+Sprocket Desktop remains our first release priority. The products are at different stages and are separate codebases today. [Engineering approach](ENGINEERING_APPROACH.md)
+
+- **Shared patterns now, a shared engine later.** Sprocket Family reuses a verified part of Sprocket Desktop's animation core. Liberty is a separate codebase built on the same principles and patterns. A single shared companion runtime is planned but not built. Each character keeps its own identity, art, personality and data.
 - **Characters stay separate from abilities.** An animation is just an animation. Capabilities such as reading a file need explicit permission, and a character's reply is never treated as proof that something happened.
 - **Content and capabilities come as checked modules.** Sprocket Family's Learning Library adds parent-approved learning packages that contain data only, never code. Sprocket Desktop's planned Pocket Workshop takes the same approach for optional add-ons.
 - **Data stays local.** Conversations, notes and learning records stay on the user's computer. The child edition runs fully offline, with no cloud AI, analytics, ads or purchases.

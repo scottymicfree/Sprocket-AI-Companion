@@ -23,7 +23,7 @@ Fenton Lab is building **Sprocket**, an animated fox who lives on the Windows de
 These are our working assumptions, not results:
 - people respond to software with a personality;
 - a companion that is careful with permissions and privacy can earn trust that general-purpose AI tools struggle to earn;
-- a reusable companion engine lets one investment support several characters and editions (Sprocket Desktop, Sprocket Family and Liberty), plus add-on packages, without rebuilding each one.
+- a shared companion engine (planned; today the products share principles and patterns) could let one investment support several characters and editions (Sprocket Desktop, Sprocket Family and Liberty), plus add-on packages, without rebuilding each one.
 
 We haven't yet tested these with paying customers.
 
@@ -70,7 +70,7 @@ These are plans, not commitments:
 2. **Sprocket Family:** owner testing, then educator, child-safety, privacy and accessibility reviews before any pilot.
 3. **More Learning Library packages and subjects.**
 4. **Pocket Workshop add-ons and new Sprocket motions,** once the new artwork is cleared.
-5. **Liberty,** the bald eagle companion.
+5. **Liberty, The Desktop Eagle:** an early-development companion whose planned Patriot Lens helps with a screen area the user deliberately selects. See [Liberty](LIBERTY.md).
 
 ## What could hold up release
 
